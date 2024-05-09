@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Page</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+<body class="noote">
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by name...">
+               
+    </div>
+    <div>
+        <button onclick="searchProfile()">Search</button>
+    </div>
+    <div class="notification-container" id="notificationContainer"></div>
+    <div >
+<script src="note.js"></script>
+  
+    </div>
+    <div id="Btnd" class="Btndw">
+        <form id="Formd" class="Tforlm">
+            <input type="date" id="Date">
+            <input type="text" id="Nprofile" placeholder="New Name">
+             <input type="text" id="category" placeholder="Qualification">
+             <input type="number" id="amount" placeholder="Salary">
+             <button onclick="addProfile()">Add Profile</button>
+                    </form>
+        <script src="nlick.js"></script>
+    </div>
+            <div class="Tlist" id="transaction-list">
+            <table class="tPody" id="data-table">
+                <thead>
+                    <tr class="date-input">
+                        <th onclick="sortTable(0)">Date</th>
+                        <th onclick="sortTable(1)">Name</th>
+                        <th onclick="sortTable(2)">Qualification</th>
+                        <th onclick="sortTable(3)">Salary</th>
+                        <th id="deleteTransaction">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="Trbody" >
+
+                
+                   
+                    </tbody>
+         
+            </table>
+        </div>
+   
+</body>
+</html>
